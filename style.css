@@ -1,0 +1,146 @@
+
+@font-face {
+    font-family: 'Geometria';
+    src: url("//www.yanncouvreur.com/cdn/shop/t/24/assets/geometria-medium.woff2?v=116869654503480791641732718647") format('woff2'),
+    url("//www.yanncouvreur.com/cdn/shop/t/24/assets/geometria-medium.woff?v=181222075370192028761732718647") format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: auto;
+  }
+
+  @font-face {
+    font-family: 'Geometria';
+    src: url("//www.yanncouvreur.com/cdn/shop/t/24/assets/geometria.woff2?v=123308363607325114521732718647") format('woff2'),
+    url("//www.yanncouvreur.com/cdn/shop/t/24/assets/geometria.woff?v=113409407844151830851732718647") format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+  }
+
+  @font-face {
+    font-family: 'Geometria';
+    src: url("//www.yanncouvreur.com/cdn/shop/t/24/assets/geometria-light.woff2?v=180229507090383176361732718647") format('woff2'),
+    url("//www.yanncouvreur.com/cdn/shop/t/24/assets/geometria-light.woff?v=4266670418006190371732718647") format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: auto;
+  }
+
+  @font-face {
+    font-family: 'Geometria';
+    src: url("//www.yanncouvreur.com/cdn/shop/t/24/assets/geometria-bold.woff2?v=47461760191677304371732718647") format('woff2'),
+    url("//www.yanncouvreur.com/cdn/shop/t/24/assets/geometria-bold.woff?v=49821349628300905451732718647") format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: auto;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  body {
+    font-family: 'Geometria', sans-serif;
+    background: url('./banner.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-bottom: 2px solid white;
+  }
+
+  header img {
+    width: 15%;
+  }
+
+  header nav {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: 0.3s ease-in-out;
+  }
+
+a {
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px   ;
+  bottom: 8px;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover::after {
+  visibility: visible;
+  transform: scaleX(0.6);   
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 20px;
+  background-color: rgb(3, 196, 255,0.5);
+  backdrop-filter: blur(15px);
+  color: black;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 60px 80px;
+  background-color: rgb(247, 243, 233);
+  color: rgb(109, 72, 51);
+}
+
+.info h2 {
+  color: rgb(109, 72, 51);
+  font-size: 62px;
+}
+
+span {
+  padding-left: 2px;
+  font-weight: 500;
+}
+
+.icon {
+    transition: none;
+    font-size: 18px;
+}
+
+.icon::after {
+    content: '';
+    display: none;
+}
