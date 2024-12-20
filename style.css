@@ -86,7 +86,7 @@ header nav {
 header a {
   text-decoration: none;
   color: white;
-  padding: 10px 20px;
+  margin: 10px 20px;
   transition: 0.3s ease-in-out;
   position: relative;
   text-transform: uppercase;
@@ -96,19 +96,20 @@ header a {
 header a::after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 0;
   height: 1px;
-  bottom: 8px;
-  left: 0;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);  
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
   background-color: white;
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out;
+  visibility: visible;
 }
 
 header a:hover::after {
-  visibility: visible;
-  transform: scaleX(0.6);
+  transform: translateX(-50%) scaleX(1);
+  width: 100%; 
 }
 
 .main-info {
@@ -208,6 +209,7 @@ header a:hover::after {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+  margin-bottom: 60px;
 }
 
 .about-us video {
