@@ -144,3 +144,22 @@ span {
     content: '';
     display: none;
 }
+
+audio {
+  display: none;
+}
+
+.mute-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  color: white;
+  width: 20px;
+  height: 20px;
+  padding: 20px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
