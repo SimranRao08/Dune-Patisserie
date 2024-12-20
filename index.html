@@ -37,51 +37,6 @@
                 </button>
             </div>
         </section>
-        <audio id="music" controls autoplay loop>
-            <source src="apt.mp3" type="audio/mpeg">
-            Your browser does not support the audio tag
-            </audio>
-            <button title="Mute Song" class="mute-button" id="muteBtn"><i class="fa-solid fa-volume-high"></i></button>
     </body>
 
 </html>
-
-<script>
-     const audio = document.getElementById('music'); 
-  const muteButton = document.getElementById('muteBtn');
-  try {
-    audio.volume = 0.2;
-  } catch(error) {
-  }
-
-
-  try {
-muteButton.addEventListener('click', ()=> {
-    if(audio.muted) {
-        audio.muted = false;    
-        muteButton.innerHTML = `<i class="fa-solid fa-volume-high"></i>`;
-        muteButton.title = "Mute Song";
-    } else {
-        audio.muted = true;
-        muteButton.innerHTML = `<i class="fa-solid fa-volume-xmark">`;
-        muteButton.title = "Play Song"
-    }
-});
-}
-catch(error) {
-}
-
-document.body.addEventListener("keydown", (e)=> {
-    if(e.key === 'MediaPlayPause') {
-        if(audio.muted) {
-            audio.muted = false;    
-            muteButton.innerHTML = `<i class="fa-solid fa-volume-high"></i>`;
-            muteButton.title = "Mute Song";
-        } else {
-            audio.muted = true;
-            muteButton.innerHTML = `<i class="fa-solid fa-volume-xmark">`;
-            muteButton.title = "Play Song"
-        }
-    }
-})
-</script>

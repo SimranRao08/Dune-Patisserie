@@ -114,6 +114,7 @@ button {
   width: 100%;
   font-size: 16px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .info {
@@ -138,6 +139,7 @@ span {
 .icon {
     transition: none;
     font-size: 18px;
+    transition: 0.5s ease;
 }
 
 .icon::after {
@@ -145,21 +147,6 @@ span {
     display: none;
 }
 
-audio {
-  display: none;
-}
-
-.mute-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 2%;
-  right: 2%;
-  color: white;
-  width: 20px;
-  height: 20px;
-  padding: 20px 20px;
-  border-radius: 30px;
-  cursor: pointer;
+.icon:hover {
+  scale: 1.2;
 }
