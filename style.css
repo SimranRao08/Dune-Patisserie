@@ -52,6 +52,9 @@
   --text-color: rgb(109, 72, 51);
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Geometria", sans-serif;
@@ -74,6 +77,16 @@ header {
 
 header img {
   width: 20%;
+}
+
+header .burger {
+  display: none;
+}
+
+header label {
+  color: white;
+  font-size: 32px;
+  display: none;
 }
 
 header nav {
@@ -138,7 +151,7 @@ a:hover::after {
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
-  position: relative;
+  position: relative; 
   overflow: hidden;
 }
 
@@ -189,9 +202,9 @@ a:hover::after {
 
 .about-us {
   	display: flex;
-	flex-direction: column;
-  color: var(--text-color);
-  margin: 60px 0px 0px 0px;
+    flex-direction: column;
+    color: var(--text-color);
+    margin: 60px 0px 0px 0px;
 }
 
 .about-us h2 {
@@ -289,19 +302,103 @@ a:hover::after {
 .footer .copyright {
 	font-size: 20px;
   color: var(--text-color);
+  text-align: center;
 }
+
   
 @media (max-width:720px) {
-    
+  header {
+    position: relative;
+  }
+
+  header label {
+    color: white;
+    font-size: 32px;
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 1px;
+    margin-top: 20px;
+  }
+    .burger:checked ~ nav a {
+      display: flex;
+    }
+
+    .burger:checked ~ .nav-link {
+      border-bottom: 2px solid white;
+    }
+
+    .burger:checked ~ nav img {
+      display: none;
+    }
+
+    header {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .nav-link {
+      display: flex;
+      margin-top: 20px;
+      align-items: center;
+      justify-content: center;   
+      flex-direction: row;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;   
+      flex-direction: row;   
+    }
+
+    nav {
+      flex-direction: column;
+    }
+
+    body {
+      background-size: cover;
+      background-position:center;
+    }
+
+    header nav a{
+      display: none;
+    }
+
+    header img {
+      width: 20%;
+    }
+
+    .main-info {
+      height: 100vh;
+    }
+
+    .about-info {
+      flex-direction: column;
+    }
+
+    .about-info h2{
+      width: 50%;
+      text-align: center;
+    }
+
+    .about-info p {
+      width: 70%;
+    }
 
     .footer{
-        text-align:left;
+        text-align: center;
         padding:5%;
     }
+
+    .footer .icon {
+      margin: 0;
+    }
+
     .footer .row ul li {
         display:block;
         margin:10px 0px;
-        text-align:left;
+        text-align:center;
     }
     .footer .row a i {
         margin:0% 3%;
