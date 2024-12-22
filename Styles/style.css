@@ -200,6 +200,14 @@ a:hover::after {
   scale: 1.2;
 }
 
+.divider {
+  background: url('../Assets/Images/patternl.png')no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
 .about-us {
   	display: flex;
     flex-direction: column;
@@ -417,3 +425,23 @@ a:hover::after {
         margin:0% 3%;
     }
   }
+
+
+  /* Animations */
+  .animate {
+    animation: reveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 70%;
+}
+
+/* Defined Animation */
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
