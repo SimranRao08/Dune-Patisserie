@@ -305,6 +305,18 @@ a:hover::after {
   text-align: center;
 }
 
+.footer .copyright a {
+  font-size: inherit;
+  text-transform: none;
+  font-weight: 500;
+  margin: 0;
+}
+
+.footer .copyright a:after {
+  content: '';
+  display: none;
+}
+
   
 @media (max-width:720px) {
   header {
