@@ -306,10 +306,11 @@ a:hover::after {
 }
 
 .footer .copyright a {
-  font-size: inherit;
+  font-size: 20px;
   text-transform: none;
   font-weight: 500;
   margin: 0;
+  transition: none;
 }
 
 .footer .copyright a:after {
