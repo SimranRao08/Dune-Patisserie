@@ -14,7 +14,7 @@
     <body>
             <nav class="nav-link">
                 <a href="index.html">Home</a>
-                <a href="#">Category</a>
+                <a href="category.html">Category</a>
                 <a href="location.html" class="active">Location</a>
             </nav>
             <nav>
@@ -46,7 +46,7 @@
                     <span>support@dune.com</span>
                     
                 </div>
-                <div onclick="style.pointerEvents='none'" style="width: 100%">
+                <div onclick="style.pointerEvents='none'" style="width: 100vw;">
                     <h1>Our address Near CHRIST University</h1>
                     <iframe width="90%" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Christ%20University%20central%20campus+(Dune%20Patisserie)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                 </div>
@@ -69,6 +69,10 @@
         
     }
 
+    * {
+        overflow-x: hidden;
+
+    }
     body {
         background: white;
     }
@@ -82,7 +86,7 @@
     .location-info {
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: start;
         margin: 60px;
     }
 
@@ -114,6 +118,8 @@
     @media (max-width:720px) {
         .location-info {
             flex-wrap: wrap;
+            margin: 10px;
+            margin-right: 0;
         }
 
         .burger-icon {
@@ -121,13 +127,14 @@
         }
 
         .contact-info {
-            width: 100%;
-            height: 90vh;
+            width: 100vw;
+            height: 70vh;
             margin-bottom: 60px;
+            margin-right: 10px;
         }
 
         iframe {
-            width: 100%;
+            width: 95vw;
         }
     }
 </style>
