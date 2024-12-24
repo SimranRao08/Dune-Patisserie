@@ -3,98 +3,391 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dune Patisserie</title>
-    <link rel="shortcut icon" href="Dune_Patisserie_Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./Styles/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/index.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
 </head>
-<header>
+<body>
+  <header>
     <input class="burger" id="burger" type="checkbox">
     <label for="burger"><i class="fa-solid fa-bars"></i></label>
 <body>
-        <nav class="nav-link">
-            <a href="#about">About Us</a>
-            <a href="category.html">Category</a>
-            <a href="location.html">Location</a>
-        </nav>
+    <nav class="nav-link">
+        <a href="#about">About us</a>
+        <!-- Category Container -->
+        <div class="category-container">
+            <a href="#" id="category-link">Category</a>
+            <div class="category-menu">
+                <div class="category-section">
+                    <ul>
+                        <h3>Macarons</h3>
+                        <li><a href="#">Classic Flavors</a></li>
+                        <li><a href="#">Seasonal & Limited Editions</a></li>
+                        <li><a href="#">Gift Boxes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="category-section">
+                    <ul>
+                        <h3>Cakes</h3>
+                        <li><a href="#">Celebration Cakes</a></li>
+                        <li><a href="#">Wedding & Custom Cakes</a></li>
+                        <li><a href="#">Petite Cakes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="category-section">
+                    <ul>
+                        <h3>Pastries</h3>
+                        <li><a href="#">Éclairs & Tarts</a></li>
+                        <li><a href="#">Croissants & Danishes</a></li>
+                        <li><a href="#">Savory Pastries</a></li>
+                    </ul>
+                </div>
+                
+                <div class="category-section">
+                    <ul>
+                        <h3>Chocolates</h3>
+                        <li><a href="#">Handcrafted Truffles</a></li>
+                        <li><a href="#">Chocolate Boxes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="category-section">
+                    <ul>
+                        <h3>Signature Creations</h3>
+                        <li><a href="#">Chef’s Favorites</a></li>
+                        <li><a href="#">Limited-Time Artisanal Designs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="category-section">
+                    <ul>
+                        <h3>Seasonal Specials</h3>
+                        <li><a href="#">Christmas Exclusives</a></li>
+                        <li><a href="#">New Year Special</a></li>
+                        <li><a href="#">Seasonal Ingredients</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="location-container">
+          <a href="#">Location</a>
+          <div class="location-menu">
+          <div class="location-info">
+            <div class="contact-info">
+                <h1>Our Contacts</h1>
+                <h3>Telephone Hotline</h3>
+                <span>+998 69 420 69 69</span>
+                <h3>Export Department</h3>
+                <span>+998 12 567 89 97</span>
+                <h3>Sales Department</h3>
+                <span>+998 12 435 23 65</span>
+                <h3>Marketing Team</h3>
+                <span>marketing@dune.com</span>
+                <h3>Email</h3>
+                <span>info@dune.com</span>
+                <h3>Support Mail</h3>
+                <span>support@dune.com</span>
+                
+            </div>
+            <div onclick="style.pointerEvents='none'" style="width: 100vw;">
+                <h1>Our address Near CHRIST University</h1>
+                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Christ%20University%20central%20campus+(Dune%20Patisserie)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+    </nav>
         <nav>
-            <img class="logo" onclick="window.location.href = 'index.html'" src="./Assets/Logos/Logo.png"></img>
+            <img class="logo" onclick="window.location.href = 'index.html'" src="../Assets/Logos/Logo.png"></img>
         </nav>
         <nav class="nav-links">
             <a href="#">Workshops</a>
             <a href="#">Blog</a>
-            <a href="shop.html">Shop</a>
+            <a href="#gallery">Gallery</a>
             <a class="icon" href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a class="icon" href="https://www.instagram.com/ledunepatisserie?igsh=OXV2bXpnMmYybmdm  "><i class="fa-brands fa-instagram"></i></a>
+            <a class="icon" href="https://www.instagram.com/ledunepatisserie?igsh=OXV2bXpnMmYybmdm"><i class="fa-brands fa-instagram"></i></a>
             <a class="icon" href="#"><i class="fa-regular fa-user"></i></a>
         </nav>
         </header>
 
-        <section class="main-info">
-            <div class="info">
-                <span>NEW YEAR 2025</span>
-                <h2>YULE LOGS</h2>
-                <button>ORDER NOW</button>
+        <!-- slider  section start -->
+        <section class="home-slider owl-carousel js-fullheight">
+            <div class="slider-item js-fullheight" style="background-image: url(images/bg_1.jpg);">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                        data-scrollax-parent="true">
+    
+                        <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                            <span class="subheading">Dune Patisserie</span>
+                            <h1 class="mb-4">Birthday Cake</h1>
+                        </div>
+    
+                    </div>
+                </div>
             </div>
-            
+    
+            <div class="slider-item js-fullheight" style="background-image: url(images/bg_2.jpg);">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                        data-scrollax-parent="true">
+    
+                        <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                            <span class="subheading">Dune Patisserie</span>
+                            <h1 class="mb-4">Wedding Cake</h1>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="slider-item js-fullheight" style="background-image: url(images/bg_3.jpg);">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                        data-scrollax-parent="true">
+    
+                        <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                            <span class="subheading">Dune Patisserie</span>
+                            <h1 class="mb-4">Special Dessert</h1>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="slider-item js-fullheight" style="background-image: url(images/bg_4.jpg);">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row slider-text js-fullheight justify-content-center align-items-center"
+                        data-scrollax-parent="true">
+    
+                        <div class="col-md-12 col-sm-12 text-center ftco-animate">
+                            <span class="subheading">Dune Patisserie</span>
+                            <h1 class="mb-4">Special Pastries</h1>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- slider  section end  -->
 
-        <section class="divider"></section>
+        <section>
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="featured">
+                          <div class="row">
+                              <div class="col-md-3">
+                                  <div class="featured-menus ftco-animate">
+                                      <div class="menu-img img" style="background-image: url(images/macaron.avif);"></div>
+                                      <div class="text text-center">
+                                          <h3>Macarons</h3>
+                                          <p><span>Chocolate</span>,
+                                        <span>Strawberry</span>, <span>Red Velvet</span></p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <div class="featured-menus ftco-animate">
+                                      <div class="menu-img img" style="background-image: url(images/b2.jpg);"></div>
+                                      <div class="text text-center">
+                                          <h3>Chocolate Cake</h3>
+                                          <p><span>Hazelnut</span>,
+                                              <span>Sprinkles</span>, <span>Caramel</span></p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <div class="featured-menus ftco-animate">
+                                      <div class="menu-img img" style="background-image: url(images/b3.jpg);"></div>
+                                      <div class="text text-center">
+                                          <h3>Pastry</h3>
+                                          <p><span>Chocolate</span>,
+                                              <span>Dark Forest</span>, <span>Strawberry</span></p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                  <div class="featured-menus ftco-animate">
+                                      <div class="menu-img img" style="background-image: url(images/croissant.avif);"></div>
+                                      <div class="text text-center">
+                                          <h3>Croissant</h3>
+                                          <p><span>Almonds</span>,
+                                              <span>Pistacho</span>, <span>Vanilla</span></p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
 
-        <section id="about" class="about-us">
-            <div class="about-info animate">
-                <h2>DUNE PATISSERIE'S KNOW - HOW</h2>
-                <p> At Dune Patisserie, every bite is a journey through the meticulous craftsmanship and artistic vision of our master pastry chef. From the ethereal meringues to the sophisticated compositions, each dessert is a testament to our commitment to quality and creativity. Our renowned Vanilla Millefeuille, honored as the "Dessert of the Year" by the LEBEY guide in 2014, exemplifies the pinnacle of our culinary artistry. Join us at Dune Patisserie and indulge in a world where tradition meets innovation, and every dessert tells a story of passion and perfection. </p>
+        <!-- about -->
+    <section class="ftco-wrap-about" id="about">
+      <div class="intro">
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <div class="intro_content">
+                          <div class="intro_subtitle page_subtitle">About Us</div>
+                          <div class="intro_title">
+                              <h2>Beautiful Story</h2>
+                          </div>
+                          <div class="intro_text">
+                              <p>At Dune Patisserie, every bite is a journey through the meticulous craftsmanship and artistic vision of our master pastry chef. From the ethereal meringues to the sophisticated compositions, each dessert is a testament to our commitment to quality and creativity. Our renowned Vanilla Millefeuille, honored as the "Dessert of the Year" by the LEBEY guide in 2014, exemplifies the pinnacle of our culinary artistry. Join us at Dune Patisserie and indulge in a world where tradition meets innovation, and every dessert tells a story of passion and perfection.</p>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xl-4 col-md-6 intro_col">
+                              <div class="intro_image"><img src="images/intro_1.jpg" alt="intro"></div>
+                          </div>
+                          <div class="col-xl-4 col-md-6 intro_col">
+                              <div class="intro_image"><img src="images/intro_2.jpg" alt="intro"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+  <section class="ftco-section bg-light" style="padding-top: 100px;" id="gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title normal-title">
+                    <div class="row justify-content-center mb-5 pb-2">
+                        <div class="col-md-12 text-center heading-section ftco-animate">
+                            <span class="subheading">Gallery</span>
+                            <h2 class="mb-4">Our Hot Picked Cakes</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <video autoplay loop muted class="animate">
-                <source src="./Assets/Videos/video-bg.mp4" type="video/mp4">
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="images/dish1.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="images/dish2.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="images/dish3.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="images/dish4.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="images/dish5.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="images/dish6.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="images/dish7.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="images/dish8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+  <section style="padding-top: 100px;background-color: white;">
+    <div class="container" style="margin-left: 0; padding: 0;">
+        <div class="justify-content-center">
+            <div class="text-center heading-section ftco-animate" style="margin-left: 50%;">
+                <span class="subheading">Dune Patisserie</span>
+                <h2>Making Process</h2>
+            </div>
+            <div class="ftco-animate">
+              <video autoplay loop muted>
+                <source src="../Assets/Videos/video-bg.mp4" type="video/mp4">
             </video>
-        </section>
+          </div>
+        </div>
+    </div>
+</section>
 
-        <section class="business-info">
-            <div class="business-card animate">
-                <p><i class="fa-solid fa-shop"></i></p>
-                <h4>PURCHASE IN STORE</h4>
-                <span>OPEN 7/7 - 24/24</span>
-            </div>
-            <div class="business-card animate">
-                <p><i class="fa-solid fa-gift"></i></p>
-                <h4>DELIVERY PARTNER</h4>
-                <span>
-                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1501 318" width="100" height="30">
-                    <title>Zomato_Logo-svg</title>
-                    <style>
-                        .s0 { fill: #e23744 } 
-                    </style>
-                    <path id="Layer" fill-rule="evenodd" class="s0" d="m229.3 81.7l-1.4 43.4-113.2 123c47.3 0 77.3-0.5 94.6-1.5-5 23.4-9.1 42.5-13.2 71.1-22.7-1.9-58.2-2.4-93.7-2.4-39.5 0-74.1 0.5-101.8 2.4l0.9-43.9 113.2-122.5c-49.5 0-67.7 0.5-88.2 0.9 4.6-21.9 7.7-46.2 10.9-70.5 35.9 1.4 50 1.9 96.9 1.9 43.2 0 67.7-0.5 95-1.9zm229.1 91c0 79.2-55.9 145-130 145-66.4 0-100.5-45.3-100.5-104.4 0-78.7 56.4-144.5 130-144.5 67.3 0 100.5 45.3 100.5 103.9zm-83.6 3.5c0-29.5-9.6-43.8-25.5-43.8-21.8 0-39.6 34.8-39.6 78.2 0 29 9.6 43.8 26 43.8 21.8 0 39.1-35.3 39.1-78.2zm1126.2-5.4c0 80.2-56.7 146.9-131.7 146.9-67.3 0-101.8-45.9-101.8-105.8 0-79.7 57.1-146.4 131.7-146.4 68.2 0 101.8 45.9 101.8 105.3zm-86.7 5.2c0-29.6-9.5-43.9-25.4-43.9-21.8 0-39.6 34.8-39.6 78.2 0 29.1 9.5 43.9 25.9 43.9 21.8 0 39.1-35.3 39.1-78.2zm-601 141.7h-78l20.4-143.1c1.9-14.3 2.3-24.8-9.1-24.8-19.5 0-45 37.7-50.9 69.7l-7.3 49.1c-2.2 17.1-5 36.7-5.4 49.1h-85.5c4.6-20.5 9.1-52.9 13.2-81.1l8.2-55.3c3.2-20.5 3.6-31.4-7.7-31.4-19.6 0-45 37.6-51 69.6l-7.2 49.1c-2.3 17.1-5.5 36.7-5.9 49.1h-84.6c4.5-20.5 9.1-52.9 13.2-81.1l10.4-71.5c4.1-27.2 5.5-55.8 4.6-77.7 31.8-1 54.5-3.4 80.5-7.7 1.8 7.7 3.1 43.4-3.2 74.9 25-48.1 61.4-77.2 95-77.2 44.5 0 47.7 35.7 42.3 73.9 25-46.3 60.4-73.9 93.2-73.9 45 0 48.2 36.7 42.2 77.2zm435.9-74.8l-9.1 56.2c-14.1 7.7-40.5 18.6-70.9 18.6-51.9 0-62.3-27.6-54.1-86.3l13.1-94.4h-25.5l7.2-61.1 27.9-1.4 10.4-44.3 78.7-29.6-10 73.9h54.1c-1.8 7.7-8.2 49.6-10 62.5h-52.8l-11.8 87.3c-3.2 22.4-1.3 30.5 14.1 30.5 11.4 0 28.2-6.7 38.7-11.9zm-322.7 73.9c-40.4 5-67-11-75-47.5-5-22.9 2-49.1 14.1-64.7 16.3-20.4 42.9-33.5 75.3-37.4 26.1-3.2 48-1.6 68.6 2.2l0.8-3.5c0.6-5.6 1.2-11.2 0.4-18-2.1-17.3-15.8-27.5-49.4-23.4-22.8 2.8-44.4 11-61.2 20.3l-16.3-49.3c22.8-13.1 51.4-23 84.2-27 62.7-7.7 106.8 12.3 112.4 58.2 1.5 12.2 1.7 25.2 0.1 36.9q-12 85.2-15.4 128.2-0.6 6.7 0 22.9l-77.7-0.1q2.4-6.7 4.4-18.2 1.3-7.5 1.9-19c-16.4 22.6-39 36-67.2 39.4zm24.4-43.5c28.6-3.6 48.3-31.2 53-58.7l0.8-7.4c-12.3-2.7-30-4.8-47.3-2.7-16.4 2-30.1 8.8-37.4 18.7-5.5 7.1-8.3 15.6-7.1 25.7 1.9 15.1 18.6 26.7 38 24.4z"/>
-                </svg>
-            </span>
-            </div>
-        </section>
 
-        <!-- Footer -->
-        <footer>
-            <div class="footer">
-                <div class="row">
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/ledunepatisserie?igsh=OXV2bXpnMmYybmdm" class="icon"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            
-                <div class="row">
-                    <ul>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Career</a></li>
-                    </ul>
-                </div>
-            
-                <div class="row copyright"><span>Made with 💜 By <a href="https://www.instagram.com/sim4anrao_/">Simran Rao</a> & <a href="https://www.instagram.com/_.zehrahh._/">Zehrah</a> </span></div>
-            </div>
-        </footer>
-    </body>
-</html>
+  <!-- footer -->
+  <footer>
+    <div class="footer ftco-animate">
+        <div class="row">
+            <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ledunepatisserie?igsh=OXV2bXpnMmYybmdm" class="icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    
+        <div class="row">
+            <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Career</a></li>
+            </ul>
+        </div>
+    
+        <div class="row copyright"><span>Made with 💜 By <a href="https://www.instagram.com/sim4anrao_/">Simran Rao</a> & <a href="https://www.instagram.com/_.zehrahh._/">Zehrah</a> </span></div>
+    </div>
+</footer>
+
+        <!-- scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+
+    <script src="main.js"></script>
