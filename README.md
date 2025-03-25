@@ -18,7 +18,7 @@ Visit the live site here: [Wix Studio - Dune Patisserie](https://ledunepatisseri
 ---
 
 ## 📲 Contact Us  
-📸 Follow us on Instagram: [@dune.patisserie](https://www.instagram.com/dune.patisserie)  
+📸 Follow us on Instagram: [@dune.patisserie](https://www.instagram.com/ledunepatisserie/)  
 
 ---
 
